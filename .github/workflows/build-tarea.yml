@@ -1,0 +1,8 @@
+on: push
+jobs:
+  build-node:
+    runs-on: ubuntu-latest
+    container: mysql
+    steps:
+      - run: mysql -V
+      - uses: actions/checkout@v3
