@@ -4,7 +4,8 @@ jobs:
     runs-on: ubuntu-latest
     container: node:16
     steps:
+      - run: echo "Isaac de la Cruz López"
       - run: node --version
-      - run: npm --version
+      - run: echo "747785"
       - uses: actions/checkout@v3
       - run: node app.js
